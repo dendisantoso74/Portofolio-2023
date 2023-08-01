@@ -1,10 +1,11 @@
-import Image from "next/image";
 import "../../app/globals.css";
+import Image from "next/image";
 import style from "./home.module.scss";
+import cn from "classnames";
 
 const Home = () => {
   return (
-    <div className={style.home}>
+    <div className={cn("flex", style.home)}>
       <div className='w-1/2'>
         <h1>Hi, I’m xxxx 👋</h1>
         <p className='text-justify'>
