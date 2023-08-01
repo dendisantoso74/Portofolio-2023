@@ -17,7 +17,7 @@ const Skill = () => {
         The skills, tools and technologies I am really good at:
       </Text>
 
-      <div className='grid grid-cols-8 grid-rows-2 gap-y-12'>
+      <div className='grid grid-cols-8 grid-rows-2 gap-y-12 justify-items-center'>
         <div className='justify-center w-max'>
           <div className='flex justify-center'>
             <img src='/images/skill/icon-javscript.png' alt='JavaScript icon' />

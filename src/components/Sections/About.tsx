@@ -7,7 +7,7 @@ import { Tag } from "../Core/Tag";
 
 const About = () => {
   return (
-    <div className='px-20 py-24 bg-gray-50 '>
+    <div id='about' className='px-20 py-24 bg-gray-50 '>
       <div className='flex justify-center mb-12'>
         <div className='bg-gray-200 w-max rounded-xl'>
           <Text className='mx-5'>About me</Text>

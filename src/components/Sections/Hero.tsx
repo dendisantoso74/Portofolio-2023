@@ -6,7 +6,7 @@ import { FaBeer, FaGithub } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className='flex justify-between px-20 py-24 bg-white'>
+    <div id='hero' className='flex justify-between px-20 py-24 bg-white'>
       <div className='w-2/3 p-8 '>
         <Text variant='headline-1'>Hi, xxxx 👋</Text>
         <Text className='text-justify'>
