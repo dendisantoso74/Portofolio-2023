@@ -47,10 +47,15 @@ const Header = () => {
           </div>
 
           <button
-            // onClick={console.log("download clicked")}
+            // onClick={console.log("download clicked")
             className='px-4 py-2 bg-gray-900 border border-black rounded-xl'
           >
-            <span className='text-white'>Download CV</span>
+            <a
+              href='https://drive.google.com/u/0/uc?id=15uiEHWZIQv0Ufk5sbq-HX_aQtkwm2OMB&export=download'
+              className='text-white'
+            >
+              Download CV
+            </a>
           </button>
         </div>
       </div>
