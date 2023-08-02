@@ -3,14 +3,17 @@ import Image from "next/image";
 import cn from "classnames";
 import { Text } from "../Core/Text";
 import { FaBeer, FaGithub } from "react-icons/fa";
+import style from "./Section.module.scss";
 
 const Experience = () => {
   return (
     <div className='bg-gray-50'>
       <div id='experience' className='container py-24 mx-auto'>
-        <div className='flex justify-center mb-4'>
-          <div className='bg-gray-200 w-max rounded-xl'>
-            <Text className='mx-5'>Experience</Text>
+        <div className='flex justify-center mb-12'>
+          <div className={style.div__section}>
+            <span className='mx-5 text-lg font-medium text-white'>
+              Experience
+            </span>
           </div>
         </div>
 

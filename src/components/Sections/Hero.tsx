@@ -27,14 +27,22 @@ const Hero = () => {
             I'm Dendi Santoso
           </Text>
         </div>
-        <Text className='mt-4 text-justify'>
-          that are fast, accessible, visually appealing, and responsive. Even
-          though I have been creating web applications for over 7 years, I still
-          love it as if it was something new.
+        <Text className='mt-8 '>
+          As a frontend web developer, I extend a warm welcome to you. Thank you
+          for visiting and getting to know more about me.
+          <br />
+          <br />
+          This profile is a showcase of my journey, accomplishments, and love
+          for web development. I hope to inspire and share insightful stories
+          with you.
+          <br />
+          <br />
+          Feel free to explore and connect with me. Let's celebrate the beauty
+          of web development and the endless possibilities it brings!
         </Text>
         <div className='flex gap-1 mt-12'>
           <div>
-            <img src='/images/icon/Map.png' alt='map icon' />
+            <img src='/images/icon/map.svg' alt='map icon' />
           </div>
           <Text>Jakarta, Indonesia</Text>
         </div>
@@ -48,10 +56,16 @@ const Hero = () => {
           </div>
           <Text>Available for new projects</Text>
         </div>
-        <div className='flex gap-4 mt-12'>
-          <img src='/images/icon/Github.png' alt='github icon' />
-          <img src='/images/icon/Twitter.png' alt='twitter icon' />
-          <img src='/images/icon/Figma.png' alt='figma icon' />
+        <div className='flex gap-8 mt-12'>
+          <a target='_blank' href='https://www.linkedin.com/in/dendisan/'>
+            <img src='/images/icon/linkedin.svg' alt='linkedin icon' />
+          </a>
+          <a target='_blank' href='https://github.com/dendisantoso74'>
+            <img src='/images/icon/github.svg' alt='github icon' />
+          </a>
+          <a target='_blank' href='https://www.instagram.com/dendi.san/'>
+            <img src='/images/icon/instagram.svg' alt='instagram icon' />
+          </a>
         </div>
       </div>
       <div className='z-10 flex justify-center w-1/3'>

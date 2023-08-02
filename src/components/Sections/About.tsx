@@ -5,16 +5,20 @@ import { Text } from "../Core/Text";
 import { FaBeer, FaGithub } from "react-icons/fa";
 import { Tag } from "../Core/Tag";
 import fotoAboutme from "/public/images/mummy-crop.jpg";
+import style from "./Section.module.scss";
 
 const About = () => {
   return (
     <div className='bg-gray-50'>
       <div id='about' className='container py-24 mx-auto '>
         <div className='flex justify-center mb-12'>
-          <div className='bg-gray-200 w-max rounded-xl'>
-            <Text className='mx-5'>About me</Text>
+          <div className={style.div__section}>
+            <span className='mx-5 text-lg font-medium text-white'>
+              About me
+            </span>
           </div>
         </div>
+
         <div className='flex justify-between'>
           <div className='flex justify-center w-1/2'>
             {/* <div>
@@ -40,26 +44,27 @@ const About = () => {
               Curious about me? Here you have it:
             </Text>
             <Text className='text-justify'>
-              I'm a passionate, self-proclaimed designer who specializes in full
-              stack development (React.js & Node.js). I am very enthusiastic
-              about bringing the technical and visual aspects of digital
-              products to life. User experience, pixel perfect design, and
-              writing clear, readable, highly performant code matters to me.
-              <br />
-              <br />I began my journey as a web developer in 2015, and since
-              then, I've continued to grow and evolve as a developer, taking on
-              new challenges and learning the latest technologies along the way.
-              Now, in my early thirties, 7 years after starting my web
-              development journey, I'm building cutting-edge web applications
-              using modern technologies such as Next.js, TypeScript, Nestjs,
-              Tailwindcss, Supabase and much more.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+              ducimus, tenetur dignissimos illum quae velit non dolor, nam
+              veniam a recusandae exercitationem accusantium blanditiis nobis
+              at, quos quia laboriosam omnis nostrum. Saepe, aliquid sunt iste
+              numquam repellendus ut amet aperiam est esse rerum vero quasi,
+              sapiente cupiditate temporibus iusto hic magni harum perferendis,
+              deleniti voluptatibus officia maio
               <br />
               <br />
-              When I'm not in full-on developer mode, you can find me hovering
-              around on twitter or on indie hacker, witnessing the journey of
-              early startups or enjoying some free time. You can follow me on
-              Twitter where I share tech-related bites and build in public, or
-              you can follow me on GitHub.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+              magni, quae officia nam eveniet in ab. Praesentium sequi aliquid
+              modi obcaecati! Blanditiis necessitatibus vero et maxime magnam
+              commodi consequatur porro enim! Excepturi eum molestiae impedit
+              adipisci quae similique beatae porro deserunt magnam sunt rem ea
+              odio optio, explicabo eveniet illo sed vitae ex tenetur veniam
+              sapiente obcaecati nihil sint! Repellendus dolorem impedit, quis
+              culpa illo velit, accusantium voluptatem odit autem aliquam animi,
+              reprehenderit optio in. Quod deserunt suscipit facilis itaque
+              delectus iusto eos in eveniet tempora quam, consequuntur velit
+              veritatis eaque amet, sapiente et aut expedita similique ad illum.
+              Exercitationem.
             </Text>
           </div>
         </div>

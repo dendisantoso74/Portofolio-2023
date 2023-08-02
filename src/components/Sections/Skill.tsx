@@ -3,19 +3,21 @@ import Image from "next/image";
 import cn from "classnames";
 import { Text } from "../Core/Text";
 import { FaBeer, FaGithub } from "react-icons/fa";
+import style from "./Section.module.scss";
 
 const Skill = () => {
   return (
     <div className='bg-white'>
       <div className='container py-24 mx-auto'>
-        <div className='flex justify-center mb-4'>
-          <div className='bg-gray-200 w-max rounded-xl'>
-            <Text className='mx-5'>Skills</Text>
+        <div className='flex justify-center mb-12'>
+          <div className={style.div__section}>
+            <span className='mx-5 text-lg font-medium text-white'>Skills</span>
           </div>
         </div>
 
         <Text className='mb-12 text-center'>
-          The skills, tools and technologies I am really good at:
+          I have a solid command of the following skills, tools, and
+          technologies:
         </Text>
 
         <div className='grid grid-cols-8 grid-rows-2 gap-y-12 justify-items-center'>
