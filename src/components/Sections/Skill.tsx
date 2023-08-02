@@ -4,6 +4,7 @@ import cn from "classnames";
 import { Text } from "../Core/Text";
 import { FaBeer, FaGithub } from "react-icons/fa";
 import style from "./Section.module.scss";
+import { TECHNOLOGIES } from "@/lib/data";
 
 const Skill = () => {
   return (
@@ -15,12 +16,12 @@ const Skill = () => {
           </div>
         </div>
 
-        <Text className='mb-12 text-center'>
+        <Text className='mb-16 text-center'>
           I have a solid command of the following skills, tools, and
           technologies:
         </Text>
 
-        <div className='grid grid-cols-8 grid-rows-2 gap-y-12 justify-items-center'>
+        {/* <div className='grid grid-cols-8 grid-rows-2 gap-y-12 justify-items-center'>
           <div className='justify-center w-max'>
             <div className='flex justify-center'>
               <img
@@ -180,6 +181,21 @@ const Skill = () => {
             </div>
             <Text>Javascript</Text>
           </div>
+        </div> */}
+
+        <div className='grid grid-cols-5 grid-rows-2 gap-y-12 justify-items-center'>
+          {TECHNOLOGIES.map((v, index) => (
+            <div key={index} className='justify-center w-max'>
+              <a href={v.url} target='_blank' className='flex justify-center'>
+                <Image
+                  src={v.logo}
+                  alt={v.label}
+                  className='transition-transform duration-300 md:hover:scale-110'
+                />
+              </a>
+              <Text className='mt-2 text-center'>{v.label}</Text>
+            </div>
+          ))}
         </div>
       </div>
     </div>
