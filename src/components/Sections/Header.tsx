@@ -41,7 +41,6 @@ const Header = () => {
               className={style.input}
               type='checkbox'
               id='darkmode-toogle'
-              checked={console.log("checked")}
               onChange={(e) => console.log("eeee", e.target.value)}
             />
             <label className={style.label} htmlFor='darkmode-toogle'></label>
