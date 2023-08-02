@@ -23,8 +23,8 @@ const Contact = () => {
           <Text className='mb-12'>
             Feel free to contact me through any of the channels below.
             <br />
-            I'm looking forward to connecting with you and ready to assist with
-            any questions, collaborations, or projects.
+            I&apos;m looking forward to connecting with you and ready to assist
+            with any questions, collaborations, or projects.
           </Text>
           <div className='flex justify-center gap-4 mb-2'>
             <div className='h-min'>

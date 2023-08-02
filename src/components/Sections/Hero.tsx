@@ -24,7 +24,7 @@ const Hero = () => {
             className='rounded-2xl'
           />
           <Text variant='headline-1' className='ml-6'>
-            I'm Dendi Santoso
+            I&apos;m Dendi Santoso
           </Text>
         </div>
         <Text className='mt-8 '>
@@ -37,8 +37,8 @@ const Hero = () => {
           with you.
           <br />
           <br />
-          Feel free to explore and connect with me. Let's celebrate the beauty
-          of web development and the endless possibilities it brings!
+          Feel free to explore and connect with me. Let&apos;s celebrate the
+          beauty of web development and the endless possibilities it brings!
         </Text>
         <div className='flex gap-1 mt-12'>
           <div>
