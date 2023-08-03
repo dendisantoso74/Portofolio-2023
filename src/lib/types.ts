@@ -1,20 +1,19 @@
-import type { StaticImageData } from 'next/image';
+import type { StaticImageData } from "next/image";
 
-export type TechDetails = {
+export type TechDetailsType = {
   logo: string | StaticImageData;
   darkModeLogo?: string | StaticImageData;
   label: string;
   url: string;
 };
 
-export type ExperienceDetails = {
+export type ExperienceDetailsType = {
   logo: string | StaticImageData;
   darkModeLogo?: string | StaticImageData;
   logoAlt: string;
   position: string;
-  currentlyWorkHere?: boolean;
-  startDate: Date;
-  endDate?: Date;
+  startDate: string;
+  endDate?: string;
   summary: string[];
 };
 
