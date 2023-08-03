@@ -11,7 +11,7 @@ const Footer = () => {
         <div className='mt-1 mr-2 h-min'>
           <img src='/images/icon/c.png' alt='copyright' />
         </div>
-        <Text>2023 Dendi | All rights reserved.</Text>
+        <Text>Dendi 2023 | All rights reserved.</Text>
       </div>
     </div>
   );

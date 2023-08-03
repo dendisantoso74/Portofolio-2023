@@ -39,7 +39,7 @@ const Contact = () => {
               <img
                 src='/images/icon/copy.png'
                 alt='copy icon'
-                className='h-min'
+                className='h-min transition-transform duration-300 md:hover:scale-110'
               />
             </button>
           </div>
