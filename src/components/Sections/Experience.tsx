@@ -48,13 +48,17 @@ const Experience = () => {
 
                 <div className='pl-0 md:w-1/2 md:pl-14 py-7'>
                   <div className='p-8 bg-white shadow-xl rounded-xl'>
-                    <div className='md:flex'>
-                      <Image src={v.logo} alt={v.logoAlt} />
+                    <div className='items-center md:flex'>
+                      <Image
+                        className='max-w-[10rem]'
+                        src={v.logo}
+                        alt={v.logoAlt}
+                      />
                       <Text
                         variant='headline-3'
                         className='mt-3 md:mt-0 md:pl-3 md:ml-3 md:border-gray-400 md:border-l-2'
                       >
-                        Metanesia
+                        {v.logoAlt}
                       </Text>
                     </div>
 
@@ -63,9 +67,13 @@ const Experience = () => {
                         {v.position}
                       </Text>
 
-                      {v.summary.map((summary, j) => (
-                        <li key={j}>{summary}</li>
-                      ))}
+                      {v.summary.length > 1 ? (
+                        v.summary.map((summary, j) => (
+                          <li key={j}>{summary}</li>
+                        ))
+                      ) : (
+                        <span>{v.summary[0]}</span>
+                      )}
                     </div>
                   </div>
                 </div>

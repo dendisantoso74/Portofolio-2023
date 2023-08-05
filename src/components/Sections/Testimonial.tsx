@@ -4,6 +4,7 @@ import cn from "classnames";
 import { Text } from "../Core/Text";
 import { FaBeer, FaGithub } from "react-icons/fa";
 import style from "./Section.module.scss";
+import { TESTIMONIALS } from "@/lib/data";
 
 const Testimonial = () => {
   return (
@@ -20,62 +21,24 @@ const Testimonial = () => {
         </Text>
 
         <div className='gap-12 m-6 md:m-0 md:flex'>
-          <div className='mb-6 bg-white shadow-md rounded-xl md:mb-0'>
-            <div className='p-12'>
-              <div className='flex justify-center'>
-                <img src='/images/testimoni/avatar.png' alt='share button' />
-              </div>
+          {TESTIMONIALS.map((v, i) => (
+            <div
+              key={i}
+              className='mb-6 bg-white shadow-md md:w-1/3 rounded-xl md:mb-0'
+            >
+              <div className='p-12'>
+                <div className='flex justify-center'>
+                  <img src='/images/testimoni/avatar.png' alt='share button' />
+                </div>
 
-              <Text className='my-6'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
-                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                curae.
-              </Text>
-              <div className='text-center'>
-                <Text variant='subtitle'>Jhon doe</Text>
-                <Text>Foubder xxxx</Text>
+                <Text className='my-6'>{v.testimonial}</Text>
+                <div className='text-center'>
+                  <Text variant='subtitle'>{v.personName}</Text>
+                  <Text>{v.title}</Text>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className='bg-white shadow-md rounded-xl'>
-            <div className='p-12'>
-              <div className='flex justify-center'>
-                <img src='/images/testimoni/avatar.png' alt='share button' />
-              </div>
-
-              <Text className='my-6'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
-                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                curae.
-              </Text>
-              <div className='text-center'>
-                <Text variant='subtitle'>Jhon doe</Text>
-                <Text>Foubder xxxx</Text>
-              </div>
-            </div>
-          </div>
-
-          <div className='bg-white shadow-md rounded-xl'>
-            <div className='p-12'>
-              <div className='flex justify-center'>
-                <img src='/images/testimoni/avatar.png' alt='share button' />
-              </div>
-
-              <Text className='my-6'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
-                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                curae.
-              </Text>
-              <div className='text-center'>
-                <Text variant='subtitle'>Jhon doe</Text>
-                <Text>Foubder xxxx</Text>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

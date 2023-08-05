@@ -16,6 +16,9 @@ import LogoGreenApex from "/public/images/logos/logo-greenapex.svg";
 import LogoGreenApexLight from "/public/images/logos/logo-greenapex-light.svg";
 import LogoDotnpixel from "/public/images/logos/logo-dotnpixel.svg";
 import LogoDotnpixelLight from "/public/images/logos/logo-dotnpixel-light.svg";
+import LogoMetanesia from "/public/images/experience/metanesia-logo.png";
+import LogoSmarteye from "/public/images/experience/logo-wordmark-light.svg";
+import LogoTelkom from "/public/images/experience/1594108255409_compress_logo telkom indonesia.png";
 
 import ProjectFiskil from "/public/images/work/Picture.png";
 // import ProjectWingie from "/public/images/project-wingie.png";
@@ -107,29 +110,35 @@ export const TECHNOLOGIES: TechDetailsType[] = [
 
 export const EXPERIENCES: ExperienceDetailsType[] = [
   {
-    logo: LogoUpwork,
-    logoAlt: "Upwork logo",
-    position: "Independent Freelancer",
-    startDate: "20 Januari 2020",
-    endDate: "20 Januari 2020",
+    logo: LogoMetanesia,
+    logoAlt: "MetaNesia",
+    position: "Frontend Developer",
+    startDate: "January 2023",
+    endDate: "Present",
     summary: [
-      "Worked for various clients like Fiskil, Shosho, Crowe MacKay LLP.",
-      "Worked with a variety of technologies, including R others.",
+      "Developing an attractive and intuitive user interface for the Metanesia application, focusing on the CMS project, and collaborating with the backend team to integrate the frontend with the existing CMS system.",
     ],
   },
   {
-    logo: LogoGreenApex,
-    darkModeLogo: LogoGreenApexLight,
-    logoAlt: "Greenapex logo",
-    position: "Team Lead",
-    startDate: "20 Januari 2020",
-    endDate: "20 Januari 2020",
+    logo: LogoSmarteye,
+    logoAlt: "Smarteye",
+    position: "Frontend Developer",
+    startDate: "March 2022",
+    endDate: "December 2022",
     summary: [
-      "Acted as team lead in different projects.",
-      "Brainstormed new ideas & gathered requirements for internal projects.",
-      "Designed architecture of different projects (frontend + backend).",
-      "Worked on enterprise-level projects for a variety of clients.",
-      "Handled sprint planning & task distribution.",
+      "Working as a frontend developer and working closely with a team of UI/UX designers, Backend, QA in developing various projects",
+      "Developed and maintaining the webinar platform at smarteye.id.",
+      "Integrated Realtime API with Socket.io to provide real-time experiences to users.",
+    ],
+  },
+  {
+    logo: LogoTelkom,
+    logoAlt: "Telkom Indonesia",
+    position: "Developer",
+    startDate: "September 2021",
+    endDate: "February 2022",
+    summary: [
+      "Internship Participant at Program Internship DDB Telkom Batch Match Up September 2021",
     ],
   },
 ];
@@ -192,26 +201,26 @@ export const PROJECTS: ProjectDetails[] = [
   },
 ];
 
-// export const TESTIMONIALS: TestimonialDetails[] = [
-//   {
-//     personName: "Krisztian Gyuris",
-//     personAvatar: AvatarKrisztian,
-//     title: "Founder - inboxgenie.io",
-//     testimonial:
-//       "Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.",
-//   },
-//   {
-//     personName: "Eugen Esanu",
-//     personAvatar: AvatarEugen,
-//     title: "Founder - shosho.design",
-//     testimonial:
-//       "Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.",
-//   },
-//   {
-//     personName: "Joe Matkin",
-//     personAvatar: AvatarDummy,
-//     title: "Freelancer",
-//     testimonial:
-//       "Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of knowledge and was able to work on my MERN stack application without any issues.",
-//   },
-// ];
+export const TESTIMONIALS: TestimonialDetails[] = [
+  {
+    personName: "Krisztian Gyuris",
+    // personAvatar: AvatarKrisztian,
+    title: "Founder - inboxgenie.io",
+    testimonial:
+      "Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.",
+  },
+  {
+    personName: "Eugen Esanu",
+    // personAvatar: AvatarEugen,
+    title: "Founder - shosho.design",
+    testimonial:
+      "Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.",
+  },
+  {
+    personName: "Joe Matkin",
+    // personAvatar: AvatarDummy,
+    title: "Freelancer",
+    testimonial:
+      "Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of knowledge and was able to work on my MERN stack application without any issues.",
+  },
+];
