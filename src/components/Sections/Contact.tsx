@@ -19,7 +19,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className='text-center'>
+        <div className='mx-6 text-center md:mx-0'>
           <Text className='mb-12'>
             Feel free to contact me through any of the channels below.
             <br />
@@ -39,7 +39,7 @@ const Contact = () => {
               <img
                 src='/images/icon/copy.png'
                 alt='copy icon'
-                className='h-min transition-transform duration-300 md:hover:scale-110'
+                className='transition-transform duration-300 h-min md:hover:scale-110'
               />
             </button>
           </div>

@@ -19,8 +19,8 @@ const Testimonial = () => {
           Some of the noteworthy projects I have built:
         </Text>
 
-        <div className='flex gap-12'>
-          <div className='bg-white shadow-md rounded-xl'>
+        <div className='gap-12 m-6 md:m-0 md:flex'>
+          <div className='mb-6 bg-white shadow-md rounded-xl md:mb-0'>
             <div className='p-12'>
               <div className='flex justify-center'>
                 <img src='/images/testimoni/avatar.png' alt='share button' />

@@ -12,9 +12,9 @@ const Header = () => {
   return (
     <div
       id='header'
-      className='sticky top-0 z-30 py-3 bg-white border-b shadow-md px-60 opacity-95'
+      className='sticky top-0 z-30 bg-white border-b shadow-md md:py-3 md:px-60 opacity-95 '
     >
-      <div className='flex justify-between text-center'>
+      <div className='justify-between hidden text-center md:flex'>
         <a href='/' className='self-center '>
           {/* <div> */}
           <Image
@@ -58,6 +58,22 @@ const Header = () => {
             </a>
           </button>
         </div>
+      </div>
+
+      <div className='flex items-center justify-between h-16 mx-6 align-middle md:hidden'>
+        <a href='/' className='self-center '>
+          {/* <div> */}
+          <Image
+            width={100}
+            height={50}
+            src='/images/den-tr.png'
+            alt='logo den'
+          />
+          {/* </div> */}
+          {/* <Text variant='headline-2'>HOME</Text> */}
+        </a>
+
+        <Image src='images/icon/list.svg' width={32} height={32} alt='menu' />
       </div>
     </div>
   );

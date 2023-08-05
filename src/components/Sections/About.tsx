@@ -19,14 +19,10 @@ const About = () => {
           </div>
         </div>
 
-        <div className='flex justify-between'>
-          <div className='flex justify-center w-1/2'>
-            {/* <div>
-            <img src='/images/about.png' alt='profile photo' />
-          </div> */}
-
+        <div className='justify-between md:flex'>
+          <div className='flex justify-center md:w-1/2'>
             {/* Image */}
-            <div className='flex justify-center md:order-first md:justify-end'>
+            <div className='flex justify-center mb-5 md:order-first md:justify-end md:mb-0'>
               <div className='relative h-[380px] w-[320px] md:h-[460px] md:w-[380px] lg:h-[520px] lg:w-[440px]'>
                 <Image
                   src={fotoAboutme}
@@ -39,7 +35,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className='w-1/2 px-12'>
+          <div className='px-12 md:w-1/2'>
             <Text variant='headline-3'>
               Curious about me? Here you have it:
             </Text>

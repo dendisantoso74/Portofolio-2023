@@ -24,47 +24,18 @@ const Experience = () => {
         </Text>
 
         <div className='grid gap-12 px-16'>
-          {/* {EXPERIENCES.map((v, i) => (
-            <div
-              key={i}
-              className='flex justify-between w-full p-8 bg-white shadow-xl rounded-xl'
-            >
-              <div className=''>
-                <Image
-                  src={v.logo}
-                  alt={v.logoAlt}
-                  className='transition-transform duration-300 md:hover:scale-110'
-                />
-              </div>
-              <div>
-                <Text variant='subtitle' className='font-bold'>
-                  {v.position}
-                </Text>
-
-                {v.summary.map((summary, j) => (
-                  <li key={j}>{summary}</li>
-                ))}
-              </div>
-              <div>
-                <Text>
-                  {v.startDate} - {v.endDate}
-                </Text>
-              </div>
-            </div>
-          ))} */}
-
           <div>
             {EXPERIENCES.map((v, i) => (
-              <div key={i} className='flex justify-center'>
-                <div className='w-1/2 pt-7 text-right pr-14 '>
+              <div key={i} className='justify-center block md:flex'>
+                <div className='text-left md:text-right md:w-1/2 pt-7 pr-14'>
                   <Text variant='subtitle'>
                     {v.startDate} - {v.endDate}
                   </Text>
                 </div>
 
-                <div className='relative border-2 border-gray-300'>
-                  <div className='absolute w-14 h-14 rounded-full -left-7 bg-gray-400'>
-                    <div className='h-full flex justify-center'>
+                <div className='relative hidden border border-gray-300 md:block'>
+                  <div className='absolute bg-gray-400 rounded-full w-14 h-14 -left-7 -top-1'>
+                    <div className='flex justify-center h-full'>
                       <Image
                         src={workImage}
                         alt='work'
@@ -75,20 +46,20 @@ const Experience = () => {
                   </div>
                 </div>
 
-                <div className='pl-14 py-7 w-1/2'>
+                <div className='pl-0 md:w-1/2 md:pl-14 py-7'>
                   <div className='p-8 bg-white shadow-xl rounded-xl'>
-                    <div className='flex'>
+                    <div className='md:flex'>
                       <Image src={v.logo} alt={v.logoAlt} />
                       <Text
                         variant='headline-3'
-                        className='border-l-2 border-gray-400 ml-3 pl-3'
+                        className='mt-3 md:mt-0 md:pl-3 md:ml-3 md:border-gray-400 md:border-l-2'
                       >
                         Metanesia
                       </Text>
                     </div>
 
                     <div className='mt-8'>
-                      <Text variant='subtitle' className='font-bold mb-3'>
+                      <Text variant='subtitle' className='mb-3 font-bold'>
                         {v.position}
                       </Text>
 

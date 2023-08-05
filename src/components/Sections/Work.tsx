@@ -20,13 +20,13 @@ const Work = () => {
         </Text>
 
         <div className='grid gap-12 px-16'>
-          <div className='flex bg-white shadow-lg rounded-xl'>
-            <div className='w-1/2 p-12 border-r-2 bg-gray-50 border-r-gray-100'>
+          <div className='bg-white shadow-lg md:flex rounded-xl'>
+            <div className='p-12 md:border-r-2 md:w-1/2 bg-gray-50 border-r-gray-100 rounded-t-xl md:rounded-t-none'>
               <div className='flex justify-center'>
                 <img src='/images/work/Picture.png' alt='company logo' />
               </div>
             </div>
-            <div className='w-1/2 p-12 bg-white'>
+            <div className='p-12 bg-white md:w-1/2 rounded-b-xl md:rounded-b-none'>
               <Text variant='subtitle' className='font-bold'>
                 Developer
               </Text>
@@ -37,7 +37,7 @@ const Work = () => {
                 curae.
               </Text>
 
-              <div className='flex gap-2 my-6'>
+              <div className='gap-2 my-6 md:flex'>
                 <div className='bg-gray-200 w-max rounded-xl'>
                   <Text className='mx-5'>Java</Text>
                 </div>
@@ -55,13 +55,13 @@ const Work = () => {
             </div>
           </div>
 
-          <div className='flex flex-row-reverse bg-white shadow-lg rounded-xl'>
-            <div className='w-1/2 p-12 border-l-2 bg-gray-50 border-r-gray-100'>
+          <div className='flex-row-reverse bg-white shadow-lg md:flex rounded-xl'>
+            <div className='p-12 md:border-l-2 md:w-1/2 bg-gray-50 border-r-gray-100 rounded-t-xl md:rounded-t-none'>
               <div className='flex justify-center'>
                 <img src='/images/work/Picture.png' alt='company logo' />
               </div>
             </div>
-            <div className='w-1/2 p-12 bg-white '>
+            <div className='p-12 bg-white md:w-1/2 rounded-b-xl md:rounded-b-none'>
               <Text variant='subtitle' className='font-bold'>
                 Developer
               </Text>
@@ -72,42 +72,7 @@ const Work = () => {
                 curae.
               </Text>
 
-              <div className='flex gap-2 my-6'>
-                <div className='bg-gray-200 w-max rounded-xl'>
-                  <Text className='mx-5'>Java</Text>
-                </div>
-                <div className='bg-gray-200 w-max rounded-xl'>
-                  <Text className='mx-5'>React</Text>
-                </div>
-                <div className='bg-gray-200 w-max rounded-xl'>
-                  <Text className='mx-5'>CSS</Text>
-                </div>
-                <div className='bg-gray-200 w-max rounded-xl'>
-                  <Text className='mx-5'>HTML</Text>
-                </div>
-              </div>
-              <img src='/images/icon/share.png' alt='share button' />
-            </div>
-          </div>
-
-          <div className='flex bg-white shadow-lg rounded-xl'>
-            <div className='w-1/2 p-12 border-r-2 bg-gray-50 border-r-gray-100'>
-              <div className='flex justify-center'>
-                <img src='/images/work/Picture.png' alt='company logo' />
-              </div>
-            </div>
-            <div className='w-1/2 p-12 bg-white'>
-              <Text variant='subtitle' className='font-bold'>
-                Developer
-              </Text>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
-                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                curae.
-              </Text>
-
-              <div className='flex gap-2 my-6'>
+              <div className='gap-2 my-6 md:flex'>
                 <div className='bg-gray-200 w-max rounded-xl'>
                   <Text className='mx-5'>Java</Text>
                 </div>

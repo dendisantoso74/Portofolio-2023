@@ -11,9 +11,9 @@ const Hero = () => {
   return (
     <div
       id='hero'
-      className='container relative flex justify-between pt-24 mx-auto bg-fixed'
+      className='container relative justify-between pt-4 mx-auto bg-fixed md:pt-24 md:flex'
     >
-      <div className='z-10 w-2/3 p-8'>
+      <div className='z-10 p-8 md:w-2/3'>
         <div className='flex'>
           <Image
             draggable='false'
@@ -21,7 +21,16 @@ const Hero = () => {
             alt='gif hallo'
             width={65}
             height={60}
-            className='rounded-2xl'
+            className='hidden rounded-2xl md:block'
+          />
+
+          <Image
+            draggable='false'
+            src={profile}
+            alt='gif hallo'
+            width={65}
+            height={60}
+            className='md:hidden rounded-2xl'
           />
           <Text variant='headline-1' className='ml-6'>
             I&apos;m Dendi Santoso
@@ -56,7 +65,7 @@ const Hero = () => {
           </div>
           <Text>Available for new projects</Text>
         </div>
-        <div className='flex gap-8 mt-12'>
+        <div className='flex justify-center gap-8 mt-12 md:justify-start'>
           <a target='_blank' href='https://www.linkedin.com/in/dendisan/'>
             <img src='/images/icon/linkedin.svg' alt='linkedin icon' />
           </a>
@@ -74,7 +83,7 @@ const Hero = () => {
           <div className='relative h-[300px] w-[280px] md:h-[360px] md:w-[320px]'>
             <Image
               src={profile}
-              alt='Headshot of Sagar'
+              alt='hero'
               className='absolute z-10 h-[280px] w-[240px] border-8 border-gray max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px]'
               style={{ objectFit: "cover" }}
             ></Image>
@@ -84,10 +93,10 @@ const Hero = () => {
 
         <Image
           src={profile}
-          alt='Headshot of Sagar'
+          alt='hero'
           // className='absolute z-10 h-[280px] w-[240px] border-8 border-gray max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px]'
           // style={{ objectFit: "cover" }}
-          className='items-end h-max'
+          className='items-end hidden h-max md:block'
         />
 
         {/* <div>
