@@ -27,7 +27,7 @@ const Experience = () => {
           <div>
             {EXPERIENCES.map((v, i) => (
               <div key={i} className='justify-center block md:flex'>
-                <div className='text-left md:text-right md:w-1/2 pt-7 pr-14'>
+                <div className='text-left md:-mt-4 md:text-right md:w-1/2 pt-7 pr-14'>
                   <Text variant='subtitle'>
                     {v.startDate} - {v.endDate}
                   </Text>
@@ -56,7 +56,7 @@ const Experience = () => {
                       />
                       <Text
                         variant='headline-3'
-                        className='mt-3 md:mt-0 md:pl-3 md:ml-3 md:border-gray-400 md:border-l-2'
+                        className='hidden mt-3 md:mt-0 md:pl-3 md:ml-3 md:border-gray-400 md:border-l-2 md:block'
                       >
                         {v.logoAlt}
                       </Text>

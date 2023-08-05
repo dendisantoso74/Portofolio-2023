@@ -123,7 +123,7 @@ export const EXPERIENCES: ExperienceDetailsType[] = [
     logo: LogoSmarteye,
     logoAlt: "Smarteye",
     position: "Frontend Developer",
-    startDate: "March 2022",
+    startDate: "March",
     endDate: "December 2022",
     summary: [
       "Working as a frontend developer and working closely with a team of UI/UX designers, Backend, QA in developing various projects",
