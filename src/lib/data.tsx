@@ -203,24 +203,24 @@ export const PROJECTS: ProjectDetails[] = [
 
 export const TESTIMONIALS: TestimonialDetails[] = [
   {
-    personName: "Krisztian Gyuris",
-    // personAvatar: AvatarKrisztian,
-    title: "Founder - inboxgenie.io",
-    testimonial:
-      "Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.",
-  },
-  {
-    personName: "Eugen Esanu",
-    // personAvatar: AvatarEugen,
-    title: "Founder - shosho.design",
-    testimonial:
-      "Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.",
-  },
-  {
-    personName: "Joe Matkin",
-    // personAvatar: AvatarDummy,
+    personName: "Jhon doe Gyuris",
+    // personAvatar: Jhon doe,
     title: "Freelancer",
     testimonial:
-      "Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of knowledge and was able to work on my MERN stack application without any issues.",
+      "Lorem ipsum dolor sit amet,re ipsam nihil aut reiciendis voluptates aliquid eveniet sit corrupti sed id quam inventore deleniti tenetur veritatis dignissimos libero itaque! Rerum, voluptatem exercitationem. Numquam, pariatur. Optio pariatur labore facere expedita aliquam enim, nobis iste!",
+  },
+  {
+    personName: "Jhon doe",
+    // personAvatar: Jhon doe,
+    title: "Freelancer",
+    testimonial:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minus reprehenderit dicta molestiae officia quibusdam est magni asperiores omnis enim aspernatur quas, deleniti unde harum laudantium nobis dolorum in! Minima.",
+  },
+  {
+    personName: "Jhon doe",
+    // personAvatar: Jhon doe,
+    title: "Freelancer",
+    testimonial:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur libero nam quibusdam molestias accusantium porro quam delectus aliquam hic. Dolores eligendi voluptatem et quo consectetur?",
   },
 ];
