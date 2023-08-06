@@ -7,8 +7,10 @@ import { Text } from "../Core/Text";
 import { FaBeer, FaGithub } from "react-icons/fa";
 // import { Link } from 'react-router-dom';
 import style from "./Section.module.scss";
+import { useState } from "react";
 
 const Header = () => {
+  const [menuMobile, setMenuMobile] = useState(false);
   return (
     <div
       id='header'
@@ -60,6 +62,7 @@ const Header = () => {
         </div>
       </div>
 
+      {/* mobile header */}
       <div className='flex items-center justify-between h-16 mx-6 align-middle md:hidden'>
         <a href='/' className='self-center '>
           {/* <div> */}
@@ -73,7 +76,39 @@ const Header = () => {
           {/* <Text variant='headline-2'>HOME</Text> */}
         </a>
 
-        <Image src='images/icon/list.svg' width={32} height={32} alt='menu' />
+        <Image
+          onClick={() => setMenuMobile(true)}
+          src='images/icon/list.svg'
+          width={32}
+          height={32}
+          alt='menu'
+        />
+      </div>
+      {/* end mobile header */}
+      {/* menu Mobile sidebar */}
+      <div
+        className={cn(
+          menuMobile
+            ? "fixed top-0 right-0 z-20 w-2/3 h-screen bg-black"
+            : "hidden"
+        )}
+      >
+        <div>
+          <button onClick={() => setMenuMobile(false)}>
+            <Text>X</Text>
+          </button>
+        </div>
+        <div className='mt-16 text-center border border-yellow-300'>
+          <a href='#about'>
+            <Text>Home</Text>
+          </a>
+          <a href='#about'>
+            <Text>Menu 2</Text>
+          </a>
+          <a href='#about'>
+            <Text>Menu 3</Text>
+          </a>
+        </div>
       </div>
     </div>
   );
