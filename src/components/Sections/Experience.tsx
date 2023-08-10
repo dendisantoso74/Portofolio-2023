@@ -26,13 +26,28 @@ const Experience = () => {
         <div className='grid gap-12 px-16'>
           <div>
             {EXPERIENCES.map((v, i) => (
-              <div key={i} className='justify-center block md:flex'>
-                <div className='text-left md:-mt-4 md:text-right md:w-1/2 pt-7 pr-14'>
+              <div
+                key={i}
+                className={cn(
+                  i % 2 === 0
+                    ? "justify-center block md:flex"
+                    : "justify-center block md:flex flex-row-reverse"
+                )}
+              >
+                {/* date experience */}
+                <div
+                  className={cn(
+                    i % 2 === 0
+                      ? "text-left md:-mt-4 md:text-right md:w-1/2 pt-7 pr-14"
+                      : "text-left md:-mt-4 md:text-left md:w-1/2 pt-7 pl-14"
+                  )}
+                >
                   <Text variant='subtitle'>
                     {v.startDate} - {v.endDate}
                   </Text>
                 </div>
 
+                {/* icon center */}
                 <div className='relative hidden border border-gray-300 md:block'>
                   <div className='absolute bg-gray-400 rounded-full w-14 h-14 -left-7 -top-1'>
                     <div className='flex justify-center h-full'>
@@ -46,7 +61,14 @@ const Experience = () => {
                   </div>
                 </div>
 
-                <div className='pl-0 md:w-1/2 md:pl-14 py-7'>
+                {/* detail Experience */}
+                <div
+                  className={cn(
+                    i % 2 === 0
+                      ? "pl-0 md:w-1/2 md:pl-14 py-7"
+                      : "pr-0 md:w-1/2 md:pr-14 py-7"
+                  )}
+                >
                   <div className='p-8 bg-white shadow-xl rounded-xl'>
                     <div className='items-center md:flex'>
                       <Image

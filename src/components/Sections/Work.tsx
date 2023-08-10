@@ -16,7 +16,7 @@ const Work = () => {
         </div>
 
         <Text className='mb-12 text-center'>
-          Some of the noteworthy projects I have built:
+          Several remarkable projects that I have developed:
         </Text>
 
         <div className='grid gap-12 px-6 md:px-16'>

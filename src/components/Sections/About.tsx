@@ -20,9 +20,9 @@ const About = () => {
         </div>
 
         <div className='justify-between md:flex'>
+          {/* Image */}
           <div className='flex justify-center md:w-1/2'>
-            {/* Image */}
-            <div className='flex justify-center mb-5 md:order-first md:justify-end md:mb-0'>
+            {/* <div className='flex justify-center mb-5 md:order-first md:justify-end md:mb-0'>
               <div className='relative h-[380px] w-[320px] md:h-[460px] md:w-[380px] lg:h-[520px] lg:w-[440px]'>
                 <Image
                   src={fotoAboutme}
@@ -32,35 +32,24 @@ const About = () => {
                 ></Image>
                 <div className='absolute h-[360px] w-[320px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:left-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]'></div>
               </div>
-            </div>
+            </div> */}
+
+            <img src='/images/setup.jpg' alt='setup' />
           </div>
 
-          <div className='px-12 md:w-1/2'>
-            <Text variant='headline-3'>
-              Curious about me? Here you have it:
+          <div className='px-12 my-auto mt-4 md:w-1/2 md:mt-0'>
+            <Text variant='headline-3' className='mb-6'>
+              Wondering about me? Here you go
             </Text>
             <Text className='text-justify'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-              ducimus, tenetur dignissimos illum quae velit non dolor, nam
-              veniam a recusandae exercitationem accusantium blanditiis nobis
-              at, quos quia laboriosam omnis nostrum. Saepe, aliquid sunt iste
-              numquam repellendus ut amet aperiam est esse rerum vero quasi,
-              sapiente cupiditate temporibus iusto hic magni harum perferendis,
-              deleniti voluptatibus officia maio
-              <br />
-              <br />
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
-              magni, quae officia nam eveniet in ab. Praesentium sequi aliquid
-              modi obcaecati! Blanditiis necessitatibus vero et maxime magnam
-              commodi consequatur porro enim! Excepturi eum molestiae impedit
-              adipisci quae similique beatae porro deserunt magnam sunt rem ea
-              odio optio, explicabo eveniet illo sed vitae ex tenetur veniam
-              sapiente obcaecati nihil sint! Repellendus dolorem impedit, quis
-              culpa illo velit, accusantium voluptatem odit autem aliquam animi,
-              reprehenderit optio in. Quod deserunt suscipit facilis itaque
-              delectus iusto eos in eveniet tempora quam, consequuntur velit
-              veritatis eaque amet, sapiente et aut expedita similique ad illum.
-              Exercitationem.
+              I&apos;am a Frontend Developer with an interest in web development
+              and design. Proficient in developing using JavaScript, TypeScript,
+              React Js, Next Js, or other frameworks to create appealing and
+              responsive user interfaces. Always keeping up with the latest
+              trends in the web industry to deliver an excellent user
+              experience. Committed to collaborating with design teams,
+              optimizing performance, and delivering innovative technical
+              solutions.
             </Text>
           </div>
         </div>

@@ -32,13 +32,17 @@ const Header = () => {
           <a href='#about' className='self-center'>
             About
           </a>
-          <a href='#work' className='self-center'>
+          <a href='#skill' className='self-center'>
+            Skill
+          </a>
+          <a href='#work' className='self-center pr-12 border-r-2'>
             Work
           </a>
-          <a href='#testimonial' className='self-center pr-12 border-r-2'>
+          {/* <a href='#testimonial' className='self-center pr-12 border-r-2'>
             Testimonial
-          </a>
-          <div className='flex self-center'>
+          </a> */}
+          {/* dark mode toogle */}
+          {/* <div className='flex self-center'>
             <input
               className={style.input}
               type='checkbox'
@@ -46,7 +50,7 @@ const Header = () => {
               onChange={(e) => console.log("eeee", e.target.value)}
             />
             <label className={style.label} htmlFor='darkmode-toogle'></label>
-          </div>
+          </div> */}
 
           <button
             // onClick={console.log("download clicked")
