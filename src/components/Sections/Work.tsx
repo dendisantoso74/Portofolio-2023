@@ -4,6 +4,7 @@ import cn from "classnames";
 import { Text } from "../Core/Text";
 import { FaBeer, FaGithub } from "react-icons/fa";
 import style from "./Section.module.scss";
+import { EXPERIENCES, PROJECTS } from "@/lib/data";
 
 const Work = () => {
   return (
@@ -20,7 +21,43 @@ const Work = () => {
         </Text>
 
         <div className='grid gap-12 px-6 md:px-16'>
-          <div className='bg-white shadow-lg md:flex rounded-xl'>
+          {PROJECTS.map((v, i) => (
+            <div
+              key={i}
+              className={cn(
+                i % 2 === 0
+                  ? "flex-row-reverse bg-white shadow-lg md:flex rounded-xl"
+                  : "bg-white shadow-lg md:flex rounded-xl"
+              )}
+            >
+              <div className='p-12 md:border-r-2 md:w-1/2 bg-gray-50 border-r-gray-100 rounded-t-xl md:rounded-t-none'>
+                <div className='flex justify-center'>
+                  <Image
+                    src={v.previewImage}
+                    alt='desain priview'
+                    className='rounded-xl'
+                  />
+                </div>
+              </div>
+              <div className='p-12 bg-white md:w-1/2 rounded-b-xl md:rounded-b-none'>
+                <Text variant='subtitle' className='mb-2 font-bold'>
+                  {v.name}
+                </Text>
+                <Text>{v.description}</Text>
+
+                <div className='flex flex-wrap gap-2 my-6'>
+                  {v.technologies.map((v, j) => (
+                    <div key={j} className='bg-gray-200 w-max rounded-xl'>
+                      <Text className='mx-5'>{v}</Text>
+                    </div>
+                  ))}
+                </div>
+                {/* <img src='/images/icon/share.png' alt='share button' /> */}
+              </div>
+            </div>
+          ))}
+          {/* card */}
+          {/* <div className='bg-white shadow-lg md:flex rounded-xl'>
             <div className='p-12 md:border-r-2 md:w-1/2 bg-gray-50 border-r-gray-100 rounded-t-xl md:rounded-t-none'>
               <div className='flex justify-center'>
                 <img src='/images/work/Picture.png' alt='company logo' />
@@ -65,9 +102,9 @@ const Work = () => {
               </div>
               <img src='/images/icon/share.png' alt='share button' />
             </div>
-          </div>
+          </div> */}
 
-          <div className='flex-row-reverse bg-white shadow-lg md:flex rounded-xl'>
+          {/* <div className='flex-row-reverse bg-white shadow-lg md:flex rounded-xl'>
             <div className='p-12 md:border-l-2 md:w-1/2 bg-gray-50 border-r-gray-100 rounded-t-xl md:rounded-t-none'>
               <div className='flex justify-center'>
                 <img src='/images/work/Picture.png' alt='company logo' />
@@ -100,7 +137,7 @@ const Work = () => {
               </div>
               <img src='/images/icon/share.png' alt='share button' />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

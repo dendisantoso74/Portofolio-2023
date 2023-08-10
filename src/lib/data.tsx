@@ -20,7 +20,9 @@ import LogoMetanesia from "/public/images/experience/metanesia-logo.png";
 import LogoSmarteye from "/public/images/experience/logo-wordmark-light.svg";
 import LogoTelkom from "/public/images/experience/1594108255409_compress_logo telkom indonesia.png";
 
-import ProjectFiskil from "/public/images/work/Picture.png";
+import ProjectWetap from "/public/images/work/wetap.png";
+import ProjectAMGV from "/public/images/work/amgv.png";
+
 // import ProjectWingie from "/public/images/project-wingie.png";
 // import ProjectPepehousing from "/public/images/project-pepehousing.png";
 
@@ -145,59 +147,20 @@ export const EXPERIENCES: ExperienceDetailsType[] = [
 
 export const PROJECTS: ProjectDetails[] = [
   {
-    name: "Wingie",
+    name: "AMGV Expo Nusa",
     description:
-      "A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.",
-    url: "https://www.wingie.com",
-    previewImage: ProjectFiskil,
-    technologies: [
-      "React",
-      "Typescript",
-      "React Bootstrap",
-      "Firebase",
-      "Express.js",
-      "PostgreSQL",
-      "Styled Components",
-      "Redux",
-    ],
+      "A digital exhibition held to showcase and demonstrate products or services provided by event participants",
+    url: "private",
+    previewImage: ProjectAMGV,
+    technologies: ["Javascript", "CSS", "Tailwind"],
   },
   {
-    name: "Fiskil",
+    name: "We-Tap",
     description:
-      "A platform for accessing real-time open banking and energy data to help you grow your business, backed with scalable back-end infrastructure.",
-    url: "https://fiskil.com.au",
-    previewImage: ProjectFiskil,
-    technologies: [
-      "React",
-      "Next.js",
-      "Typescript",
-      "Tailwindcss",
-      "Material UI",
-      "Redux Toolkit",
-      "React Query",
-      "Express.js",
-      "PostgreSQL",
-      "Firebase",
-      "AWS Amplify",
-      "Cypress",
-      "Storybook",
-    ],
-  },
-  {
-    name: "Pepehousing",
-    description:
-      "A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.",
-    url: "https://pepehousing.com",
-    previewImage: ProjectFiskil,
-    technologies: [
-      "React",
-      "Next.js",
-      "Typescript",
-      "Tailwindcss",
-      "Redux Toolkit",
-      "React Query",
-      "Storybook",
-    ],
+      "A platform for creating customizable digital business cards that cater to users' preferences and can generate QR codes.",
+    url: "private",
+    previewImage: ProjectWetap,
+    technologies: ["Javascript", "CSS", "Bootstrap"],
   },
 ];
 

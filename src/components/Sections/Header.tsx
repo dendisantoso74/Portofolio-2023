@@ -35,8 +35,11 @@ const Header = () => {
           <a href='#skill' className='self-center'>
             Skill
           </a>
-          <a href='#work' className='self-center pr-12 border-r-2'>
+          <a href='#work' className='self-center'>
             Work
+          </a>
+          <a href='#contact' className='self-center pr-12 border-r-2'>
+            Contact
           </a>
           {/* <a href='#testimonial' className='self-center pr-12 border-r-2'>
             Testimonial
