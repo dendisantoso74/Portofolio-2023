@@ -101,19 +101,36 @@ const Header = () => {
         )}
       >
         <div>
-          <button onClick={() => setMenuMobile(false)}>
-            <Text>X</Text>
+          <button className='mt-5 ml-2 ' onClick={() => setMenuMobile(false)}>
+            {/* <Text>X</Text> */}
+            <Image
+              src='images/icon/chevron-double-right.svg'
+              width={32}
+              height={32}
+              alt='menu'
+            />
           </button>
         </div>
-        <div className='mt-16 text-center border border-yellow-300'>
-          <a href='#about'>
-            <Text>Home</Text>
+        <div className='mt-16 ml-5 text-left text-white'>
+          <a href='#about' onClick={() => setMenuMobile(false)}>
+            <Text variant='headline-3' className='mb-5'>
+              About
+            </Text>
           </a>
-          <a href='#about'>
-            <Text>Menu 2</Text>
+          <a href='#skill' onClick={() => setMenuMobile(false)}>
+            <Text variant='headline-3' className='mb-5'>
+              Skill
+            </Text>
           </a>
-          <a href='#about'>
-            <Text>Menu 3</Text>
+          <a href='#work' onClick={() => setMenuMobile(false)}>
+            <Text variant='headline-3' className='mb-5'>
+              Work
+            </Text>
+          </a>
+          <a href='#contact' onClick={() => setMenuMobile(false)}>
+            <Text variant='headline-3' className='mb-5'>
+              Contact
+            </Text>
           </a>
         </div>
       </div>
