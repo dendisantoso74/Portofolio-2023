@@ -11,11 +11,6 @@ import LogoFigma from "/public/images/logos/icon-figma.svg";
 import LogoGit from "/public/images/logos/icon-git.svg";
 import LogoVite from "/public/images/logos/logo-vite.png";
 
-import LogoUpwork from "/public/images/logos/logo-upwork.svg";
-import LogoGreenApex from "/public/images/logos/logo-greenapex.svg";
-import LogoGreenApexLight from "/public/images/logos/logo-greenapex-light.svg";
-import LogoDotnpixel from "/public/images/logos/logo-dotnpixel.svg";
-import LogoDotnpixelLight from "/public/images/logos/logo-dotnpixel-light.svg";
 import LogoMetanesia from "/public/images/experience/metanesia-logo.png";
 import LogoSmarteye from "/public/images/experience/logo-wordmark-light.svg";
 import LogoTelkom from "/public/images/experience/1594108255409_compress_logo telkom indonesia.png";
@@ -23,12 +18,17 @@ import LogoTelkom from "/public/images/experience/1594108255409_compress_logo te
 import ProjectWetap from "/public/images/work/wetap.png";
 import ProjectAMGV from "/public/images/work/amgv.png";
 
-// import ProjectWingie from "/public/images/project-wingie.png";
-// import ProjectPepehousing from "/public/images/project-pepehousing.png";
+import ProjectBFI1 from "/public/images/work/BFI/1.png";
+import ProjectBFI2 from "/public/images/work/BFI/2.png";
+import ProjectBFI3 from "/public/images/work/BFI/3.png";
 
-// import AvatarKrisztian from "/public/images/avatar-krisztian.png";
-// import AvatarEugen from "/public/images/avatar-eugen.png";
-// import AvatarDummy from "/public/images/avatar-dummy.svg";
+import ProjectBBI1 from "/public/images/work/BBI/1.png";
+import ProjectBBI2 from "/public/images/work/BBI/2.png";
+import ProjectBBI3 from "/public/images/work/BBI/3.png";
+import ProjectBBI4 from "/public/images/work/BBI/4.png";
+import ProjectBBI5 from "/public/images/work/BBI/5.png";
+import ProjectBBI6 from "/public/images/work/BBI/6.png";
+import ProjectBBI7 from "/public/images/work/BBI/7.png";
 
 import {
   ExperienceDetailsType,
@@ -147,11 +147,35 @@ export const EXPERIENCES: ExperienceDetailsType[] = [
 
 export const PROJECTS: ProjectDetails[] = [
   {
+    name: "Virtual Office BFI",
+    description:
+      "A digital exhibition held to showcase and demonstrate products or services provided by event participants",
+    url: "private",
+    previewImage: [ProjectBFI1, ProjectBFI2, ProjectBFI3],
+    technologies: ["A-frmae", "Javascript", "ReactJs", "Tailwind"],
+  },
+  {
+    name: "CMS BBI",
+    description:
+      "A digital exhibition held to showcase and demonstrate products or services provided by event participants",
+    url: "private",
+    previewImage: [
+      ProjectBBI1,
+      ProjectBBI2,
+      ProjectBBI3,
+      ProjectBBI4,
+      ProjectBBI5,
+      ProjectBBI6,
+      ProjectBBI7,
+    ],
+    technologies: ["Vite", "Typescript", "ReactJs", "Tailwind"],
+  },
+  {
     name: "AMGV Expo Nusa",
     description:
       "A digital exhibition held to showcase and demonstrate products or services provided by event participants",
     url: "private",
-    previewImage: ProjectAMGV,
+    previewImage: [ProjectAMGV],
     technologies: ["Javascript", "CSS", "Tailwind"],
   },
   {
@@ -159,7 +183,7 @@ export const PROJECTS: ProjectDetails[] = [
     description:
       "A platform for creating customizable digital business cards that cater to users' preferences and can generate QR codes.",
     url: "private",
-    previewImage: ProjectWetap,
+    previewImage: [ProjectWetap],
     technologies: ["Javascript", "CSS", "Bootstrap"],
   },
 ];

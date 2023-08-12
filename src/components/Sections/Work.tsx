@@ -8,17 +8,20 @@ import { FaBeer, FaGithub } from "react-icons/fa";
 import style from "./Section.module.scss";
 import { EXPERIENCES, PROJECTS } from "@/lib/data";
 import { Carousel } from "react-responsive-carousel";
+import imageDummy from "public/images/work/amgv.png";
+import imageDummy2 from "public/images/work/Picture.png";
 
 const Work = () => {
   const settings = {
     // className: "center",
-    autoPlay: true,
-    centerMode: true,
+    autoPlay: false,
+    centerMode: false,
     infiniteLoop: true,
     showThumbs: false,
     showStatus: false,
     interval: 2000,
     stopOnHover: false,
+    // dynamicHeight: true,
   };
 
   return (
@@ -33,39 +36,49 @@ const Work = () => {
         <Text className='mb-12 text-center'>
           Several remarkable projects that I have developed:
         </Text>
-      </div>
 
-      {/* experimental card */}
-      {PROJECTS.map((v, i) => (
-        <div key={i}>
-          <div className='' style={{ width: "screen" }}>
-            <Carousel {...settings}>
-              <img src='/images/crop/1.png' alt='ss' />
-              <img src='/images/crop/2.png' alt='ss' />
-              <img src='/images/crop/3.png' alt='ss' />
-              <img src='/images/crop/4.png' alt='ss' />
-              <img src='/images/crop/5.png' alt='ss' />
-              <img src='/images/crop/6.png' alt='ss' />
-            </Carousel>
-          </div>
-
-          <div className='container px-4 py-10 mx-auto md:px-28'>
-            <Text variant='headline-2' className='mb-2 font-bold'>
-              {v.name}
-            </Text>
-            <Text>{v.description}</Text>
-
-            <div className='flex flex-wrap gap-2 my-6'>
-              {v.technologies.map((v, j) => (
-                <div key={j} className='bg-gray-200 w-max rounded-xl'>
-                  <Text className='mx-5'>{v}</Text>
+        <div className='grid grid-cols-3 grid-rows-none gap-6 p-6'>
+          {/* card work */}
+          {PROJECTS.map((v, i) => (
+            <div
+              key={i}
+              className='bg-white border shadow-md rounded-xl md:mb-0'
+            >
+              <div className=''>
+                <div className='p-10 bg-gray-100'>
+                  <div className='flex justify-center'>
+                    <Carousel {...settings}>
+                      {v.previewImage.map((img, j) => (
+                        <Image
+                          key={j}
+                          src={img}
+                          alt='desain priview'
+                          className='rounded-xl'
+                        />
+                      ))}
+                    </Carousel>
+                  </div>
                 </div>
-              ))}
+
+                <div className='p-8'>
+                  <Text variant='headline-3' className=''>
+                    {v.name}
+                  </Text>
+
+                  <Text className='mt-3'>{v.description}</Text>
+                  <div className='flex flex-wrap gap-2 my-6'>
+                    {v.technologies.map((skill, k) => (
+                      <div key={k} className='bg-gray-200 w-max rounded-xl'>
+                        <Text className='mx-5'>{skill}</Text>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
-            {/* <img src='/images/icon/share.png' alt='share button' /> */}
-          </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 };

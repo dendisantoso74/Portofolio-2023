@@ -21,7 +21,7 @@ export type ProjectDetails = {
   name: string;
   description: string;
   url: string;
-  previewImage: string | StaticImageData;
+  previewImage: string[] | StaticImageData[];
   technologies: string[];
 };
 
