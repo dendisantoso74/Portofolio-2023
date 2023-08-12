@@ -37,7 +37,7 @@ const Work = () => {
           Several remarkable projects that I have developed:
         </Text>
 
-        <div className='grid grid-cols-3 grid-rows-none gap-6 p-6'>
+        <div className='grid grid-cols-1 grid-rows-none gap-6 p-6 md:grid md:grid-cols-3'>
           {/* card work */}
           {PROJECTS.map((v, i) => (
             <div
@@ -45,7 +45,7 @@ const Work = () => {
               className='bg-white border shadow-md rounded-xl md:mb-0'
             >
               <div className=''>
-                <div className='p-10 bg-gray-100'>
+                <div className='p-10 bg-gray-100 rounded-t-xl'>
                   <div className='flex justify-center'>
                     <Carousel {...settings}>
                       {v.previewImage.map((img, j) => (
