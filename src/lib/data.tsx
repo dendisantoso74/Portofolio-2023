@@ -15,7 +15,10 @@ import LogoMetanesia from "/public/images/experience/metanesia-logo.png";
 import LogoSmarteye from "/public/images/experience/logo-wordmark-light.svg";
 import LogoTelkom from "/public/images/experience/1594108255409_compress_logo telkom indonesia.png";
 
-import ProjectWetap from "/public/images/work/wetap.png";
+import ProjectWetap1 from "/public/images/work/we-tap/1.png";
+import ProjectWetap2 from "/public/images/work/we-tap/2.png";
+import ProjectWetap3 from "/public/images/work/we-tap/3.png";
+
 import ProjectAMGV from "/public/images/work/amgv.png";
 
 import ProjectBFI1 from "/public/images/work/BFI/1.png";
@@ -29,6 +32,30 @@ import ProjectBBI4 from "/public/images/work/BBI/4.png";
 import ProjectBBI5 from "/public/images/work/BBI/5.png";
 import ProjectBBI6 from "/public/images/work/BBI/6.png";
 import ProjectBBI7 from "/public/images/work/BBI/7.png";
+
+import Project17an1 from "/public/images/work/17an/1.png";
+import Project17an2 from "/public/images/work/17an/2.png";
+import Project17an3 from "/public/images/work/17an/3.png";
+import Project17an4 from "/public/images/work/17an/4.png";
+import Project17an5 from "/public/images/work/17an/5.png";
+import Project17an6 from "/public/images/work/17an/6.png";
+import Project17an7 from "/public/images/work/17an/7.png";
+import Project17an8 from "/public/images/work/17an/8.png";
+import Project17an9 from "/public/images/work/17an/9.png";
+
+import ProjectNU1 from "/public/images/work/NU/1.png";
+
+import ProjectStudio1 from "/public/images/work/studio/1.png";
+import ProjectStudio2 from "/public/images/work/studio/2.png";
+import ProjectStudio3 from "/public/images/work/studio/3.png";
+import ProjectStudio4 from "/public/images/work/studio/4.png";
+import ProjectStudio5 from "/public/images/work/studio/5.png";
+import ProjectStudio6 from "/public/images/work/studio/6.png";
+import ProjectStudio7 from "/public/images/work/studio/7.png";
+
+import ProjectPeradilan1 from "/public/images/work/vr/1.png";
+import ProjectPeradilan2 from "/public/images/work/vr/2.png";
+import ProjectPeradilan3 from "/public/images/work/vr/3.png";
 
 import {
   ExperienceDetailsType,
@@ -147,14 +174,6 @@ export const EXPERIENCES: ExperienceDetailsType[] = [
 
 export const PROJECTS: ProjectDetails[] = [
   {
-    name: "Virtual Office BFI",
-    description:
-      "A digital exhibition held to showcase and demonstrate products or services provided by event participants",
-    url: "private",
-    previewImage: [ProjectBFI1, ProjectBFI2, ProjectBFI3],
-    technologies: ["A-frmae", "Javascript", "ReactJs", "Tailwind"],
-  },
-  {
     name: "CMS BBI",
     description:
       "A digital exhibition held to showcase and demonstrate products or services provided by event participants",
@@ -171,6 +190,65 @@ export const PROJECTS: ProjectDetails[] = [
     technologies: ["Vite", "Typescript", "ReactJs", "Tailwind"],
   },
   {
+    name: "CMS Studio",
+    description:
+      "A digital exhibition held to showcase and demonstrate products or services provided by event participants",
+    url: "private",
+    previewImage: [
+      ProjectStudio1,
+      ProjectStudio2,
+      ProjectStudio3,
+      ProjectStudio4,
+      ProjectStudio5,
+      ProjectStudio6,
+      ProjectStudio7,
+    ],
+    technologies: ["Vite", "Typescript", "ReactJs", "Tailwind"],
+  },
+  {
+    name: "NU Tech",
+    description:
+      "A digital exhibition held to showcase and demonstrate products or services provided by event participants",
+    url: "private",
+    previewImage: [ProjectNU1],
+    technologies: ["Vite", "Typescript", "ReactJs", "Tailwind"],
+  },
+  {
+    name: "17an",
+    description:
+      "A digital exhibition held to showcase and demonstrate products or services provided by event participants",
+    url: "private",
+    previewImage: [
+      Project17an1,
+      Project17an2,
+      Project17an3,
+      Project17an4,
+      Project17an5,
+      Project17an6,
+      Project17an7,
+      Project17an8,
+      Project17an9,
+    ],
+    technologies: ["Vite", "Typescript", "ReactJs", "Tailwind"],
+  },
+  {
+    name: "e-mootcourt",
+    description:
+      "A digital exhibition held to showcase and demonstrate products or services provided by event participants",
+    url: "private",
+    previewImage: [ProjectPeradilan1, ProjectPeradilan2, ProjectPeradilan3],
+    technologies: ["Vite", "Typescript", "ReactJs", "Tailwind"],
+  },
+
+  {
+    name: "Virtual Office BFI",
+    description:
+      "A digital exhibition held to showcase and demonstrate products or services provided by event participants",
+    url: "private",
+    previewImage: [ProjectBFI1, ProjectBFI2, ProjectBFI3],
+    technologies: ["A-frmae", "Javascript", "ReactJs", "Tailwind"],
+  },
+  {
     name: "AMGV Expo Nusa",
     description:
       "A digital exhibition held to showcase and demonstrate products or services provided by event participants",
@@ -183,7 +261,7 @@ export const PROJECTS: ProjectDetails[] = [
     description:
       "A platform for creating customizable digital business cards that cater to users' preferences and can generate QR codes.",
     url: "private",
-    previewImage: [ProjectWetap],
+    previewImage: [ProjectWetap1, ProjectWetap2, ProjectWetap3],
     technologies: ["Javascript", "CSS", "Bootstrap"],
   },
 ];
