@@ -145,7 +145,9 @@ export const EXPERIENCES: ExperienceDetailsType[] = [
     startDate: "January 2023",
     endDate: "Present",
     summary: [
-      "Developing an attractive and intuitive user interface for the Metanesia application, focusing on the CMS project, and collaborating with the backend team to integrate the frontend with the existing CMS system.",
+      "Developing an engaging and intuitive user interface for the Metanesia application, with a focus on a CMS project that is seamlessly integrated with a 3D preview using components from Unity.",
+      "Collaborating with the backend team to integrate the frontend with the existing CMS system.",
+      "Utilizing Vite.js as the primary framework to build high-performance applications with a rapid development experience.",
     ],
   },
   {
@@ -155,9 +157,13 @@ export const EXPERIENCES: ExperienceDetailsType[] = [
     startDate: "March",
     endDate: "December 2022",
     summary: [
-      "Working as a frontend developer and working closely with a team of UI/UX designers, Backend, QA in developing various projects",
-      "Developed and maintaining the webinar platform at smarteye.id.",
-      "Integrated Realtime API with Socket.io to provide real-time experiences to users.",
+      "Developing the Smarteye Virtual Convention Center (SVCC) product as a platform for managing virtual organizational events like webinars, equipped with features such as attendance management, live chat, dynamic captions, and more.",
+      "Used React.js and Next.js to build responsive and dynamic user interfaces in web projects.",
+      "Implemented Tailwind CSS and SCSS to style and design UI elements according to appealing and consistent designs.",
+      "Contributed to developing immersive VR environments using A-Frame (a web framework for building virtual reality experiences).",
+      "Leveraged Socket.io features to create seamless real-time communication between the server and clients.",
+      "Contribute in creating the Optic Design System by smarteye.id, including designing reusable components and providing clear design guidelines.",
+      "Delivered high-quality projects within tight deadlines.",
     ],
   },
   {

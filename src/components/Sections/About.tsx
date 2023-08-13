@@ -9,7 +9,7 @@ import style from "./Section.module.scss";
 
 const About = () => {
   return (
-    <div className='bg-gray-50'>
+    <div className='overflow-hidden bg-gray-50'>
       <div id='about' className='container py-24 mx-auto '>
         <div className='flex justify-center mb-12'>
           <div className={style.div__section}>
@@ -21,7 +21,7 @@ const About = () => {
 
         <div className='justify-between md:flex'>
           {/* Image */}
-          <div className='flex justify-center md:w-1/2'>
+          <div className='flex justify-center md:w-1/2' data-aos='fade-right'>
             {/* <div className='flex justify-center mb-5 md:order-first md:justify-end md:mb-0'>
               <div className='relative h-[380px] w-[320px] md:h-[460px] md:w-[380px] lg:h-[520px] lg:w-[440px]'>
                 <Image
@@ -37,7 +37,10 @@ const About = () => {
             <img src='/images/setup.jpg' alt='setup' />
           </div>
 
-          <div className='px-12 my-auto mt-4 md:w-1/2 md:mt-0'>
+          <div
+            className='px-12 my-auto mt-4 md:w-1/2 md:mt-0'
+            data-aos='fade-left'
+          >
             <Text variant='headline-3' className='mb-6'>
               Wondering about me? Here you go
             </Text>

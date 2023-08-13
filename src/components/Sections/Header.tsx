@@ -35,6 +35,10 @@ const Header = () => {
           <a href='#skill' className='self-center'>
             Skill
           </a>
+          <a href='#experience' className='self-center'>
+            Experience
+          </a>
+
           <a href='#work' className='self-center'>
             Work
           </a>
@@ -120,6 +124,11 @@ const Header = () => {
           <a href='#skill' onClick={() => setMenuMobile(false)}>
             <Text variant='headline-3' className='mb-5'>
               Skill
+            </Text>
+          </a>
+          <a href='#experience' onClick={() => setMenuMobile(false)}>
+            <Text variant='headline-3' className='mb-5'>
+              Experience
             </Text>
           </a>
           <a href='#work' onClick={() => setMenuMobile(false)}>

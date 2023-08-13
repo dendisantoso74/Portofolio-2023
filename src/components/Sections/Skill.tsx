@@ -21,9 +21,14 @@ const Skill = () => {
           technologies:
         </Text>
 
-        <div className='grid grid-cols-3 grid-rows-3 md:grid-cols-5 gap-y-12 justify-items-center'>
+        <div className='grid grid-cols-3 grid-rows-none md:grid-cols-5 gap-y-12 justify-items-center'>
           {TECHNOLOGIES.map((v, index) => (
-            <div key={index} className='justify-center w-max'>
+            <div
+              key={index}
+              className='justify-center w-max'
+              data-aos='zoom-in'
+              data-aos-delay={150 * index}
+            >
               <a href={v.url} target='_blank' className='flex justify-center'>
                 <Image
                   src={v.logo}

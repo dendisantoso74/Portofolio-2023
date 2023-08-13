@@ -1,3 +1,5 @@
+"use client";
+
 import "../../app/globals.css";
 import Image from "next/image";
 import cn from "classnames";
@@ -6,10 +8,11 @@ import { FaBeer, FaGithub } from "react-icons/fa";
 import style from "./Section.module.scss";
 import { EXPERIENCES, TECHNOLOGIES } from "@/lib/data";
 import workImage from "/public/images/icon/building.svg";
+import { useEffect } from "react";
 
 const Experience = () => {
   return (
-    <div className='bg-gray-50'>
+    <div className='overflow-hidden bg-gray-50'>
       <div id='experience' className='container py-24 mx-auto'>
         <div className='flex justify-center mb-12'>
           <div className={style.div__section}>
@@ -41,6 +44,8 @@ const Experience = () => {
                       ? "text-left md:-mt-4 md:text-right md:w-1/2 pt-7 pr-14"
                       : "text-left md:-mt-4 md:text-left md:w-1/2 pt-7 pl-14"
                   )}
+                  data-aos={i % 2 === 0 ? "fade-left" : "fade-right"}
+                  data-aos-delay={150 * i}
                 >
                   <Text variant='subtitle'>
                     {v.startDate} - {v.endDate}
@@ -48,7 +53,12 @@ const Experience = () => {
                 </div>
 
                 {/* icon center */}
-                <div className='relative hidden border border-gray-300 md:block'>
+                <div
+                  className='relative hidden border border-gray-300 md:block'
+                  data-aos='zoom-out'
+                  // data-aos-delay={100 * i}
+                  data-aos-duration='800'
+                >
                   <div className='absolute bg-gray-400 rounded-full w-14 h-14 -left-7 -top-1'>
                     <div className='flex justify-center h-full'>
                       <Image
@@ -68,6 +78,8 @@ const Experience = () => {
                       ? "pl-0 md:w-1/2 md:pl-14 py-7"
                       : "pr-0 md:w-1/2 md:pr-14 py-7"
                   )}
+                  data-aos={i % 2 === 0 ? "fade-right" : "fade-left"}
+                  data-aos-delay={150 * i}
                 >
                   <div className='p-8 bg-white shadow-xl rounded-xl'>
                     <div className='items-center md:flex'>
@@ -90,9 +102,11 @@ const Experience = () => {
                       </Text>
 
                       {v.summary.length > 1 ? (
-                        v.summary.map((summary, j) => (
-                          <li key={j}>{summary}</li>
-                        ))
+                        <ul className='ml-4 list-disc'>
+                          {v.summary.map((summary, j) => (
+                            <li key={j}>{summary}</li>
+                          ))}
+                        </ul>
                       ) : (
                         <span>{v.summary[0]}</span>
                       )}

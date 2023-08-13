@@ -20,13 +20,13 @@ const Contact = () => {
         </div>
 
         <div className='mx-6 text-center md:mx-0'>
-          <Text className='mb-12'>
+          <Text className='mb-12' data-aos='fade-up'>
             Feel free to contact me through any of the channels below.
             <br />
             I&apos;m looking forward to connecting with you and ready to assist
             with any questions, collaborations, or projects.
           </Text>
-          <div className='flex justify-center gap-4 mb-2'>
+          <div className='flex justify-center gap-4 mb-2' data-aos='fade-up'>
             <div className='h-min'>
               <img src='/images/icon/mail.png' alt='email icon' />
             </div>
@@ -59,11 +59,11 @@ const Contact = () => {
               />
             </button>
           </div> */}
-          <Text className='mt-12'>
+          <Text className='mt-12' data-aos='fade-up'>
             You may also find me on these platforms!
           </Text>
 
-          <div className='flex justify-center gap-5 mt-3'>
+          <div className='flex justify-center gap-5 mt-3' data-aos='fade-up'>
             <a target='_blank' href='https://www.linkedin.com/in/dendisan/'>
               <img src='/images/icon/linkedin.svg' alt='linkedin icon' />
             </a>

@@ -25,7 +25,7 @@ const Work = () => {
   };
 
   return (
-    <div className='bg-white'>
+    <div className='overflow-hidden bg-white'>
       <div id='work' className='container pt-24 mx-auto '>
         <div className='flex justify-center mb-12'>
           <div className={style.div__section}>
@@ -43,6 +43,9 @@ const Work = () => {
             <div
               key={i}
               className='bg-white border shadow-md rounded-xl md:mb-0'
+              data-aos='fade-left'
+              data-aos-delay={300 * i}
+              // data-aos-duration='800'
             >
               <div className=''>
                 <div className='p-10 bg-gray-100 rounded-t-xl'>
