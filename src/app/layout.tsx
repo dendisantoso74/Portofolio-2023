@@ -1,3 +1,4 @@
+import { Providers } from "@/lib/providers";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -25,7 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <html className='scroll-smooth' lang='en'>
-      <body className={inter.className}>{children}</body>
+      <Providers>
+        <body className={inter.className}>{children}</body>
+      </Providers>
     </html>
   );
 }

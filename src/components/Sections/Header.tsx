@@ -8,6 +8,7 @@ import { FaBeer, FaGithub } from "react-icons/fa";
 // import { Link } from 'react-router-dom';
 import style from "./Section.module.scss";
 import { useState } from "react";
+import { ThemeSwitcher } from "../Core/ThemeSwitcher";
 
 const Header = () => {
   const [menuMobile, setMenuMobile] = useState(false);
@@ -49,6 +50,7 @@ const Header = () => {
             Testimonial
           </a> */}
           {/* dark mode toogle */}
+          <ThemeSwitcher />
           {/* <div className='flex self-center'>
             <input
               className={style.input}
