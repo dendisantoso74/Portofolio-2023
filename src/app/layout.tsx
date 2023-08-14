@@ -26,9 +26,11 @@ export default function RootLayout({
 }) {
   return (
     <html className='scroll-smooth' lang='en'>
-      <Providers>
-        <body className={inter.className}>{children}</body>
-      </Providers>
+      <body className={inter.className}>
+        <Providers>
+          <main>{children}</main>
+        </Providers>
+      </body>
     </html>
   );
 }

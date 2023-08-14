@@ -13,7 +13,7 @@ const About = () => {
       <div id='about' className='container py-24 mx-auto '>
         <div className='flex justify-center mb-12'>
           <div className={style.div__section}>
-            <span className='mx-5 text-lg font-medium text-white'>
+            <span className='mx-5 text-lg font-medium text-white dark:text-red-600'>
               About me
             </span>
           </div>
