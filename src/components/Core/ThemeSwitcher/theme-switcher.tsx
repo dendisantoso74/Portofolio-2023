@@ -13,8 +13,10 @@ export const ThemeSwitcher = () => {
   };
 
   useEffect(() => {
-    if (systemTheme) {
-      setTheme(systemTheme);
+    if (theme === "system") {
+      if (systemTheme) {
+        setTheme(systemTheme);
+      }
     }
   }, [systemTheme]);
 
@@ -35,7 +37,7 @@ export const ThemeSwitcher = () => {
         id='darkmode-toogle'
         onChange={toggleTheme}
         checked={theme === "light" ? false : true}
-        defaultChecked={systemTheme === "light" ? false : true}
+        // defaultChecked={systemTheme === "light" ? false : true}
       />
       <label className={style.label} htmlFor='darkmode-toogle'></label>
     </div>
