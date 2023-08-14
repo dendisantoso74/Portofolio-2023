@@ -29,12 +29,12 @@ const Header = () => {
           {/* <Text variant='headline-2'>HOME</Text> */}
         </a>
         <div className='flex justify-between w-2/5'>
-          <a href='#about' className='self-center'>
+          {/* <a href='#about' className='self-center'>
             About
           </a>
           <a href='#skill' className='self-center'>
             Skill
-          </a>
+          </a> */}
           <a href='#experience' className='self-center'>
             Experience
           </a>
