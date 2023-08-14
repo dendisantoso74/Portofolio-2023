@@ -109,6 +109,7 @@ const Header = () => {
         <div>
           <button className='mt-5 ml-2 ' onClick={() => setMenuMobile(false)}>
             {/* <Text>X</Text> */}
+
             <Image
               src='images/icon/chevron-double-right.svg'
               width={32}
@@ -117,9 +118,10 @@ const Header = () => {
             />
           </button>
         </div>
-        <div className='mt-16 ml-5 text-left text-white'>
+        <div className='mt-10 ml-5 text-left text-white'>
+          <ThemeSwitcher />
           <a href='#about' onClick={() => setMenuMobile(false)}>
-            <Text variant='headline-3' className='mb-5'>
+            <Text variant='headline-3' className='mt-5 mb-5'>
               About
             </Text>
           </a>
