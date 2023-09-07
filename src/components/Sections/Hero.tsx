@@ -6,6 +6,7 @@ import { FaBeer, FaGithub } from "react-icons/fa";
 import profile from "/public/images/id-removebg-crop.png";
 import gify from "/public/images/giphy.gif";
 import style from "./Section.module.scss";
+import { IconContext } from "react-icons";
 
 const Hero = () => {
   return (
@@ -13,6 +14,15 @@ const Hero = () => {
       id='hero'
       className='container relative justify-between pt-4 mx-auto bg-fixed md:pt-24 md:flex'
     >
+      <IconContext.Provider
+        value={{ size: "4 rem", color: "blue", className: "global-class-name" }}
+      >
+        <div>
+          <FaBeer />
+          <FaGithub />
+        </div>
+      </IconContext.Provider>
+
       <div className='z-10 p-8 md:w-2/3'>
         <div className='flex'>
           <Image
@@ -37,17 +47,19 @@ const Hero = () => {
           </Text>
         </div>
         <Text className='mt-8 '>
-          As a frontend web developer, I extend a warm welcome to you. Thank you
-          for visiting and getting to know more about me.
+          Hello there! I want to extend a welcome to you as a frontend web
+          developer. I really appreciate your visit and the opportunity to share
+          more about myself.
           <br />
           <br />
-          This profile is a showcase of my journey, accomplishments, and love
-          for web development. I hope to inspire and share insightful stories
-          with you.
+          This profile is, like a window into my journey, achievements and
+          passion, for web development. My aim is to inspire and engage with you
+          through stories.
           <br />
           <br />
-          Feel free to explore and connect with me. Let&apos;s celebrate the
-          beauty of web development and the endless possibilities it brings!
+          Please feel free to explore and connect with me. Lets come together
+          and celebrate the world of web development and all the amazing
+          opportunities it offers!
         </Text>
         <div className='flex gap-1 mt-12'>
           <div>
@@ -103,7 +115,6 @@ const Hero = () => {
           <img src='/images/pic.png' alt='profile photo' />
         </div> */}
       </div>
-
       {/* <div className='absolute top-0 left-0 right-0 object-cover h-full md:w-full md:object-fill'> */}
       {/* <img
         src='/images/gelombang.jpg'
