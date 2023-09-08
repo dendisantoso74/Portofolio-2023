@@ -14,15 +14,6 @@ const Hero = () => {
       id='hero'
       className='container relative justify-between pt-4 mx-auto bg-fixed md:pt-24 md:flex'
     >
-      <IconContext.Provider
-        value={{ size: "4 rem", color: "blue", className: "global-class-name" }}
-      >
-        <div>
-          <FaBeer />
-          <FaGithub />
-        </div>
-      </IconContext.Provider>
-
       <div className='z-10 p-8 md:w-2/3'>
         <div className='flex'>
           <Image
