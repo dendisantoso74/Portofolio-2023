@@ -12,7 +12,7 @@ import { useEffect } from "react";
 
 const Experience = () => {
   return (
-    <div className='overflow-hidden bg-gray-50'>
+    <div className='overflow-hidden bg-gray-50 dark:bg-gray-900'>
       <div id='experience' className='container py-24 mx-auto'>
         <div className='flex justify-center mb-12'>
           <div className={style.div__section}>
@@ -81,7 +81,7 @@ const Experience = () => {
                   data-aos={i % 2 === 0 ? "fade-right" : "fade-left"}
                   data-aos-delay={150 * i}
                 >
-                  <div className='p-8 bg-white shadow-xl rounded-xl'>
+                  <div className='p-8 bg-white shadow-xl rounded-xl dark:bg-[#222831b8]'>
                     <div className='items-center md:flex'>
                       <Image
                         className='max-w-[10rem]'

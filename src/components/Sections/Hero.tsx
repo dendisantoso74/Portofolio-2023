@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <div
       id='hero'
-      className='container relative justify-between pt-4 mx-auto bg-fixed md:pt-24 md:flex'
+      className='container relative justify-between pt-4 mx-auto bg-fixed md:pt-24 md:flex bg-red'
     >
       <div className='z-10 p-8 md:w-2/3'>
         <div className='flex'>

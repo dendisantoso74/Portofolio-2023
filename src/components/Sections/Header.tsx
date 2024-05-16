@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <div
       id='header'
-      className='sticky top-0 z-30 bg-white border-b shadow-md md:py-3 md:px-60 opacity-95 '
+      className='sticky top-0 z-30 bg-white border-b shadow-md md:py-3 md:px-60 opacity-95 dark:bg-[#222831] dark:border-none'
     >
       <div className='justify-between hidden text-center md:flex'>
         <a href='/' className='self-center '>
@@ -66,7 +66,7 @@ const Header = () => {
             className='px-4 py-2 bg-gray-900 border border-black rounded-xl'
           >
             <a
-              href='https://drive.google.com/u/0/uc?id=15uiEHWZIQv0Ufk5sbq-HX_aQtkwm2OMB&export=download'
+              href='https://drive.google.com/u/0/uc?id=1Hi66zC30aNopdgeunt_nCbFd9o0GOoIw&export=download'
               className='text-white'
             >
               Download CV

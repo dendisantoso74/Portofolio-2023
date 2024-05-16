@@ -8,7 +8,7 @@ import { TECHNOLOGIES } from "@/lib/data";
 
 const Skill = () => {
   return (
-    <div className='bg-white'>
+    <div className='bg-white dark:bg-[#121212]'>
       <div id='skill' className='container py-24 mx-auto'>
         <div className='flex justify-center mb-12'>
           <div className={style.div__section}>

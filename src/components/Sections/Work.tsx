@@ -25,7 +25,7 @@ const Work = () => {
   };
 
   return (
-    <div className='overflow-hidden bg-white'>
+    <div className='overflow-hidden bg-white dark:bg-[#121212]'>
       <div id='work' className='container pt-24 mx-auto '>
         <div className='flex justify-center mb-12'>
           <div className={style.div__section}>
@@ -42,13 +42,13 @@ const Work = () => {
           {PROJECTS.map((v, i) => (
             <div
               key={i}
-              className='bg-white border shadow-md rounded-xl md:mb-0'
+              className='bg-white border shadow-md rounded-xl md:mb-0 dark:bg-[#222831b8] dark:border-none'
               data-aos='fade-left'
               data-aos-delay={300 * i}
               // data-aos-duration='800'
             >
               <div className=''>
-                <div className='p-10 bg-gray-100 rounded-t-xl'>
+                <div className='p-10 bg-gray-100 rounded-t-xl dark:bg-gray-500'>
                   <div className='flex justify-center'>
                     <Carousel {...settings}>
                       {v.previewImage.map((img, j) => (
@@ -71,7 +71,7 @@ const Work = () => {
                   <Text className='mt-3'>{v.description}</Text>
                   <div className='flex flex-wrap gap-2 my-6'>
                     {v.technologies.map((skill, k) => (
-                      <div key={k} className='bg-gray-200 w-max rounded-xl'>
+                      <div key={k} className='bg-gray-200 w-max rounded-xl '>
                         <Text className='mx-5'>{skill}</Text>
                       </div>
                     ))}

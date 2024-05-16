@@ -9,7 +9,7 @@ import style from "./Section.module.scss";
 
 const Contact = () => {
   return (
-    <div className='bg-gray-50'>
+    <div className='bg-gray-50 dark:bg-gray-900'>
       <div id='contact' className='container py-24 mx-auto '>
         <div className='flex justify-center mb-12'>
           <div className={style.div__section}>

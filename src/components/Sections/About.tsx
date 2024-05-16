@@ -9,11 +9,11 @@ import style from "./Section.module.scss";
 
 const About = () => {
   return (
-    <div className='overflow-hidden bg-gray-50'>
+    <div className='overflow-hidden bg-gray-50 dark:bg-gray-900'>
       <div id='about' className='container py-24 mx-auto '>
         <div className='flex justify-center mb-12'>
           <div className={style.div__section}>
-            <span className='mx-5 text-lg font-medium text-white dark:text-red-600'>
+            <span className='mx-5 text-lg font-medium text-white'>
               About me
             </span>
           </div>
